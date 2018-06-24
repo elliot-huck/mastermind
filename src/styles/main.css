@@ -3,6 +3,7 @@
   padding: 0;
   display: flex;
   box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
 }
 
 title {
@@ -13,10 +14,21 @@ body {
   background-color: slategray;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+
+#titlebar {
+  height: 10%;
+  border: 1px solid green;
+  align-items: center;
 }
 
 #gameboard {
   width: 100vmax;
+  border: 1px solid red;
+  height: 90%;
 }
 
 .row {
@@ -30,8 +42,8 @@ body {
 .empty {
   background-color: black;
   border-radius: 50%;
-  min-height: 6vmax;
-  min-width: 6vmax;
+  min-height: 5vmax;
+  min-width: 5vmax;
   margin: 1vmax;
   box-sizing: content-box;
   border: 5px solid darkslateblue;
